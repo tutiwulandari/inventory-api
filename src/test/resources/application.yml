@@ -1,0 +1,17 @@
+application:
+  data-dir: inventory-api
+server.port: 8080
+spring:
+  datasource:
+    url: jdbc:h2:mem:inventory
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+  messages.basename: i18n/messages
+  servlet:
+    multipart:
+      max-file-size: 1GB
+      max-request-size: 1GB
+
